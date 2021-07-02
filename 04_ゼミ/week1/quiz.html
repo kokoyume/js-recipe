@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>はじめてのホームページ</title>
+  </head>
+  <body>
+    <h1>私の好きなものは何でしょう？</h1>
+    <button id="purinn">プリン</button>
+    <button id="karaimono">辛いもの</button>
+    <button id="bennkyou">勉強</button>
+    <div id="display">回答の表示場所</div>
+    <script>
+      const display = document.getElementById("display")
+      const purin = document.getElementById("purin")
+      const karaimono = document.getElementById("karaimono")
+      const bennkyou = document.getElementById("bennkyou")
+      purin.onclick = function() {
+        display.textContent = "大正解！プリン命！"
+      }
+      karaimono.onclick = function() {
+        display.textContent = "辛いものは受け付けません！泣きます(´；ω；`)ｳｯ…"
+      }
+      bennkyou.onclick = function() {
+        display.textContent = "この世で一番嫌いです！勉強せずに生きていきたい！"
+      }
+    </script>
+  </body>
+</html>
