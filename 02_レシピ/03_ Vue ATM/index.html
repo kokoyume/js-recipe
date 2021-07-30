@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM</title>
+  </head>
+  <body>
+    <h1>入力画面</h1>
+    <div id="v-model">
+      <input type="number" v-model="nyuuryokugaku" />
+      <div>入力額：{{ nyuuryokugaku }}円</div>
+      <div id="#v-onclick"></div>
+      <button v-on:click="nyuukinn">入金</button>
+      <button v-on:click="syukkinn">出金</button>
+      <br /><br />
+      <h1>口座残高</h1>
+      <div>残高：{{ zanndaka }}円</div>
+      <br /><br />
+      <h1>取引記録</h1>
+      <div>{{torihikikiroku}}</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
